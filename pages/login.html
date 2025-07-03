@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login system</title>
+    <link rel="shortcut icon" href="../images/user.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="bg-black">
+      <div class="container py-4 d-flex justify-content-center">
+        <h2 class="mb-0 text-white">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Login System
+        </h2>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <form
+          class="w-75 mx-auto text-white-50 bg-black p-5 pb-2 rounded-3 mt-5"
+        >
+          <h2 class="text-white mb-4">Enter your login credentials:</h2>
+          <div class="mb-3">
+            <label for="userEmail" class="form-label">Email:</label>
+            <input
+              type="email"
+              class="form-control bg-black text-white"
+              id="userEmail"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="userPassword" class="form-label">Password:</label>
+            <input
+              type="password"
+              class="form-control bg-black text-white"
+              id="userPassword"
+            />
+          </div>
+          <button id="loginBtn" class="btn btn-primary">Log in</button>
+          <p
+            id="successMsg"
+            class="bg-success text-center text-white p-1 rounded rounded-1 d-none my-2"
+          >
+            success, redirecting to home page
+          </p>
+          <p
+            id="errorMsg"
+            class="alert alert-danger text-center d-none p-1 rounded rounded-1 my-2"
+          >
+            Error, email or password invalid
+          </p>
+
+          <p class="text-center my-2">
+            Don't have an account?
+            <a class="btn btn-success" href="../index.html">Register now</a>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

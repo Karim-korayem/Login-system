@@ -1,0 +1,44 @@
+body {
+  background-color: #111;
+  text-transform: capitalize;
+}
+.card {
+  background-color: black;
+  color: white;
+}
+.container {
+  padding-top: 50px;
+}
+input {
+  background-color: black !important;
+  color: white !important;
+}
+input::placeholder,
+textarea::placeholder {
+  color: white !important;
+  opacity: 0.25 !important;
+}
+
+.form-control[type="file"]::-webkit-file-upload-button {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.form-control[type="file"]:hover::-webkit-file-upload-button {
+  background-color: #0b5ed7 !important;
+}
+
+textarea {
+  resize: vertical;
+  background-color: black !important;
+  color: white !important;
+}
+#searchInput::placeholder {
+  color: #ffffff6d;
+}
+.heading {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
