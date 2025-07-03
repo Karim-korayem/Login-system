@@ -9,7 +9,7 @@ const logUserOut = () => {
   localStorage.removeItem("UserName");
   welcomeMsg.innerHTML = "Logging Out";
   setTimeout(() => {
-    window.location.href = "/login.html";
+    window.location.href = "/Login-system/pages/login.html";
   }, 1000);
 };
 
@@ -20,7 +20,7 @@ if (localStorage.getItem("UserName") !== null) {
 } else {
   welcomeMsg.innerHTML = "you're not logged in, redirecting to login page";
   setTimeout(() => {
-    window.location.href = "/login.html";
+    window.location.href = "/Login-system/pages/login.html";
   }, 1000);
 }
 // event listeners
