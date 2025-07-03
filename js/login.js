@@ -23,7 +23,7 @@ const loginUser = () => {
       successMsg.classList.replace("d-none", "d-block");
       localStorage.setItem("UserName", usersArray[i].name);
       setTimeout(() => {
-        window.location.href = "/pages/home.html";
+        window.location.href = "/Login-system/pages/home.html";
       }, 1000);
       return;
     }

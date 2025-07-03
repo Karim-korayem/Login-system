@@ -55,7 +55,7 @@ const registerUser = function () {
     localStorage.setItem("Users", JSON.stringify(usersArray));
     successMsg.classList.replace("d-none", "d-block");
     setTimeout(function () {
-      window.location.href = "/pages/login.html";
+      window.location.href = "/Login-system/pages/login.html";
     }, 1000);
     console.log(usersArray);
   } else {
