@@ -9,7 +9,7 @@ const logUserOut = () => {
   localStorage.removeItem("UserName");
   welcomeMsg.innerHTML = "Logging Out";
   setTimeout(() => {
-    window.location.href = "/pages/login.html";
+    window.location.href = "Login-system/pages/login.html";
   }, 1000);
 };
 
